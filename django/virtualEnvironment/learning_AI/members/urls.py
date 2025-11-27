@@ -18,6 +18,7 @@ urlpatterns = [
     # path('member/', views.members, name='members'),
     # path('worker/', views.workers, name='workers'),
     path('users/', views.user_list, name='users'),
+     path('users/<int:pk>/', views.user_detail, name='user-detail'),
     path('products/', views.get_products, name='products'),
     #swagger-UI
     path('swagger(<format>\.json|\.yaml)', schema_view.without_ui(cache_timeout=0), name='schema-json'),
